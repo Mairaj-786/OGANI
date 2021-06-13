@@ -1,0 +1,25 @@
+.featured_product {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    padding: 3vw 7.6vw;
+}
+.featured_product strong {
+    font-size: 3em;
+    position: relative;
+    font-family: var(--Staatliches);
+}
+.featured_product strong::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 7%;
+    background: var(--bg);
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%);
+}

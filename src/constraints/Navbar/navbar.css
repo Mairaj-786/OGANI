@@ -1,0 +1,124 @@
+.navbar {
+    position: relative;
+    width: 100%;
+}
+.navbar_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 7.6vw;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ham {
+    display: none;
+}
+.nav_list {
+    position: relative;
+    display: flex;
+}
+
+.nav_list ul {
+    position: relative;
+    display: flex;
+    /* background: #000; */
+}
+.nav_list ul li {
+    display: flex;
+    list-style: none;
+}
+.active {
+    color: var(--bg) !important;
+}
+.nav_list ul li a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 1em;
+    padding-top: 1em;
+    font-size: 1.3em;
+    display: flex;
+    text-decoration-line: none;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav_list ul li a:hover {
+    color: var(--bg) !important;
+}
+
+/* Cart iteam */
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+}
+.material_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.material_icon::after {
+    position: absolute;
+    content: "1";
+    top: -20%;
+    right: 40%;
+    /* left: 0%; */
+    bottom: 0%;
+    background: var(--bg);
+    color: var(--light);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+    padding: 8px 8px;
+}
+.item {
+    font-size: 1.3em;
+    width: 120px;
+    display: flex;
+    padding-left: 39px !important;
+    align-items: right;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .navbar_wrapper {
+        padding: 0 6.4vw;
+    }
+}
+@media (max-width: 769px) {
+    .navbar_wrapper {
+        padding: 0 4.4vw;
+    }
+    .nav_list {
+        display: none;
+    }
+    .ham {
+        display: block;
+    }
+    .navbar_wrapper {
+        display: block;
+    }
+    .logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .cart {
+        margin-top: 2em;
+        justify-content: center !important;
+    }
+}

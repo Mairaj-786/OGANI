@@ -6,7 +6,6 @@ const FeaturedProduct = () => {
     return (<>
         <div className='featured_product'>
             <strong>Featured Product</strong>
-
             <Product />
         </div>
     </>

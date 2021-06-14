@@ -35,6 +35,6 @@
 } */
 @media (max-width: 991px) {
     .mobile_nav {
-        display: block;
+        /* display: block; */
     }
 }

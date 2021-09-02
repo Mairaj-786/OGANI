@@ -5,7 +5,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 import './navbar.css'
 import MobileNav from './MobileNav';
+import { useSelector } from 'react-redux';
 const Navbar = () => {
+    const { cart } = useSelector(state => state.cartReducer)
     const [state, setState] = useState(false);
     return (
         <div className="navbar">
@@ -30,6 +32,7 @@ const Navbar = () => {
                     <div className="material_icon">
                         <FavoriteIcon style={{ fontSize: '18px', cursor: 'pointer' }} className="icons" />
                         <LocalMallIcon style={{ fontSize: '18px', cursor: 'pointer' }} />
+                        <span>{cart ? cart.id : ''}</span>
                     </div>
                     <div className="item">
                         <span>item:<strong> $150.00</strong></span>
